@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.carousel-item img {
+    width: 450px; /* Set the width of the images to fill the card */
+    height: 500px; /* Set the height of the images */
+    object-fit: cover; /* Maintain aspect ratio while covering the card */
+}
+
+.carousel-item {
+    margin-right: -240px; /* Adjust the margin between cards */
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 55px;
+}
+
+.custom-arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+}
+
+.custom-arrow-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-arrow-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
