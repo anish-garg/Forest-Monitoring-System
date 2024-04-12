@@ -7,6 +7,7 @@ import 'react-multi-carousel/lib/styles.css';
 import Card1 from "../assets/_520be86a-9e63-4446-ab4c-94e902492282.jpg";
 import Card2 from "../assets/_66b21c21-bb54-45a5-ba1e-e24229e7b1b9.jpg";
 import Card3 from "../assets/_a3496f4a-9f67-4f7f-8fa7-15ba12c5f4fc.jpg";
+import { NavLink } from 'react-router-dom';
 
 const Section = () => {
     const responsive = {
@@ -68,7 +69,7 @@ const Section = () => {
                         <p className='font-medium'>Forest Sight invites users to immerse themselves in a journey <br /> of exploration through the world's forests using detailed <br /> data analysis.</p>
                     </div>
                     <img className='opacity-55 z-0' src={Card1} alt="Image 1" />
-                    <button className='relative bottom-16 left-5 bg-green-700 text-white w-32 h-10 rounded-full hover:bg-green-900'>Explore Data</button>
+                    <NavLink to="/map"><button className='relative bottom-16 left-5 bg-green-700 text-white w-32 h-10 rounded-full hover:bg-green-900'>Explore Data</button></NavLink>
                 </div>
                 <div className="carousel-item mt-6">
                     <div className='flex flex-col gap-5 relative top-[9.5rem] left-2 z-10'>

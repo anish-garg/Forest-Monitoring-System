@@ -1,15 +1,25 @@
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
-import Section from "./components/Section"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Website from './pages/Website'
+import Map from './pages/Map'
+import Layout from './components/Layout'
+import Dashboard from './pages/Dashboard'
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Section/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Website />} />
+            <Route path='/map'>
+              <Route index element={<Map />} />
+            </Route>
+            <Route path='/dashboard'>
+              <Route index element={<Dashboard />} />
+            </Route>
+          </Route>
+        </Routes>
+      </BrowserRouter >
     </>
   )
 }
