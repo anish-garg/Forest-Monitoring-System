@@ -11,7 +11,7 @@ Getting Started
 To run the Forest Monitoring System locally, follow these steps:
 
 Clone the repository:
-git clone https://github.com/your-username/forest-monitoring-system.git
+git clone https://github.com/anish-garg/Forest-Monitoring-System
 
 Navigate to the project directory:
 cd forest-monitoring-system
