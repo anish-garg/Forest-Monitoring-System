@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route element={<Layout /> TEST}>
+          <Route element={<Layout />}>
             <Route path="/" element={<Website />} />
             <Route path='/map'>
               <Route index element={<Map />} />
